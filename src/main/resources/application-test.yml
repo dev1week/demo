@@ -1,0 +1,18 @@
+# H2 Database Configuration for Testing
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        ddl-auto: create
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG                 # SQL 쿼리 출력
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # 쿼리 파라미터 바인딩 값 출력
