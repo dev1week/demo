@@ -34,6 +34,8 @@ public class Trainer {
     private List<TrainerPokemon> trainerPokemons = new ArrayList<>();
 
 
+    private int test;
+
     public TrainerDto toDto() {
         return new TrainerDto(
                 this.id,
