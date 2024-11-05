@@ -36,6 +36,8 @@ dependencies {
 
     // Add H2 dependency for testing
     testImplementation 'com.h2database:h2'
+    implementation 'com.h2database:h2'  // H2 데이터베이스 의존성 추가
+
 
 
     // JUnit or Spring Boot test dependencies (if not already included)
